@@ -3,44 +3,42 @@ import java.util.Scanner;
 public class Scanners {
 
     public static void main(String[] args) {
+// 1.
+            Scanner scanner = new Scanner(System.in);
 
-        // 1.
-        Scanner scanner = new Scanner(System.in);
+            // 2.
+            System.out.println("Please enter your first name:");
 
-        // 2.
-        System.out.println("Please enter your first name:");
+            // 3.
+            String firstName = scanner.nextLine();
 
-        // 3.
-        String firstName = scanner.nextLine();
+            // 4.
+            System.out.println("Please enter your last name:");
 
-        // 4.
-        System.out.println("Please enter your last name:");
+            // 5.
+            String lastName = scanner.nextLine();
 
-        // 5.
-        String lastName = scanner.nextLine();
+            // 6.
+            System.out.println("Please enter your age:");
 
-        // 6.
-        System.out.println("Please enter your age:");
+            // 7.
+            int age = scanner.nextInt();
+            scanner.nextLine();
 
-        // 7.
-        int age = scanner.nextInt();
+            // 8.
+            System.out.println("Please enter your favourite song:");
 
-        // 8.
-        System.out.println("Please enter your favourite song:");
+            // 9.
+            String favSong = scanner.nextLine();
 
-        // 9.
-        scanner.newLine();
-        String favSong = scanner.nextLine();
+            // 10.
+            String info = ("Hi, my name is " + firstName + " " + lastName + ". I am " + age + " years old and my favourite song is " + favSong + ".");
 
-        // 10.
-        String info = ("Hi, my name is " + firstName + " " + lastName + ". I am " + age + " years old and my favourite song is" + favSong + ".");
+            // 11.
+            System.out.println(info);
 
-        // 11.
-        //System.out.println(info);
-
-        // 12.
-        //close(scanner);
-
+            // 12.
+            scanner.close();
     }
 }
 
